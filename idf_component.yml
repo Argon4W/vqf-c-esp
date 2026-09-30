@@ -1,0 +1,13 @@
+version: "2.1.2"
+maintainers:
+  - "Daniel Laidig"
+  - "Thomas Seel"
+  - "Maintainers of dlaidig/vqf"
+  - "Argon4W"
+description: "C-port of dlaidig/vqf as an ESP-IDF component."
+license: "MIT License"
+url: "https://github.com/Argon4W/vqf-c-esp"
+repository: "https://github.com/Argon4W/vqf-c-esp.git"
+issues: "https://github.com/Argon4W/vqf-c-esp/issues"
+dependencies:
+  idf: ">=5.0"
