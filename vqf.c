@@ -1564,7 +1564,7 @@ vqf_context_t* vqf_context_new(
 	vqf_coeff->bias_P0 = square(vqf_param->bias_sigma_init * 100.0f);
 
 	// the system noise increases the variance from 0 to (0.1 °/s)^2 in biasForgettingTime seconds
-	vqf_coeff->bias_V = 0.1f * 100.0f * vqf_coeff->acc_ts / vqf_param->bias_forgetting_time;
+	vqf_coeff->bias_V = square(0.1f * 100.0f) * vqf_coeff->acc_ts / vqf_param->bias_forgetting_time;
 
 #ifndef VQF_NO_MOTION_BIAS_ESTIMATION
 	const float_t p_motion = square(vqf_param->bias_sigma_motion * 100.0f);

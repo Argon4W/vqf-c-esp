@@ -474,7 +474,7 @@ typedef struct {
 		vqf_quaternion_handle_t destination_quaternion
 	);
 	/**
-	 * @brief							Rotate an existing quaternion by given radians around Z axis. (destination_quaternion = src_quaternion * [cos(rotation_z_radians/2), 0, 0, sin(rotation_z_radians/2)])
+	 * @brief							Rotate an existing quaternion by given radians around Z axis. (destination_quaternion = [cos(rotation_z_radians/2), 0, 0, sin(rotation_z_radians/2)] * src_quaternion)
 	 * @param src_quaternion			the source quaternion to be rotated.
 	 * @param rotation_z_radians		the rotation around Z axis in radians.
 	 * @param destination_quaternion	destination quaternion to hold the result quaternion.
